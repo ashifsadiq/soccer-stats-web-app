@@ -1,5 +1,6 @@
 {
   "name": "soccer-stats-web-app",
+  "homepage": "https://soccer-stats-web-app.ashifsadiq.in/",
   "version": "0.1.0",
   "private": true,
   "scripts": {
