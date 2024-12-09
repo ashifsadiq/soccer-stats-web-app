@@ -50,8 +50,8 @@ const Explore = () => {
                 ) : (
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {matches.map((match) => (
-                            <a
-                                href={`/matches/${match.id}`}
+                            <Link
+                                to={`/matches/${match.id}`}
                                 key={match.id}
                                 className="bg-gray-800 p-4 rounded-lg shadow-lg cursor-pointer"
                             >
@@ -84,7 +84,7 @@ const Explore = () => {
                                         Current Score: {match.current_score}
                                     </span>
                                 </div>
-                            </a>
+                            </Link>
                         ))}
                     </div>
                 )}

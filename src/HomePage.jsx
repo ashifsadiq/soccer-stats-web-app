@@ -20,9 +20,9 @@ const HomePage = () => {
                     Your ultimate destination for real-time player statistics, team data,
                     and personalized tracking.
                 </p>
-                <a className="mt-8 px-6 py-3 bg-purple-600 hover:bg-purple-500 rounded-full shadow-lg text-lg font-medium transition" href={'/explore'}>
+                <Link className="mt-8 px-6 py-3 bg-purple-600 hover:bg-purple-500 rounded-full shadow-lg text-lg font-medium transition" to={'/explore'}>
                     Explore Now
-                </a>
+                </Link>
 
             </header>
 
