@@ -20,6 +20,7 @@ const Players = ({ match = {}, players = [] }) => {
             {players.data.map((player, playerIndex) => (
               <PlayerCard
                 player={player}
+                match={match}
                 sNo={undefined}
                 key={playerIndex.toString()}
               />
@@ -39,6 +40,7 @@ const Players = ({ match = {}, players = [] }) => {
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-5 p-5">
             {players.vs_data.map((player, playerIndex) => (
               <PlayerCard
+                match={match?.vs_data}
                 player={player}
                 sNo={undefined}
                 key={playerIndex.toString()}

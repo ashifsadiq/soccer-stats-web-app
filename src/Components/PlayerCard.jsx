@@ -5,7 +5,7 @@ import globe from '../assets/svg/globe.svg'
 import goalNet from '../assets/svg/goal-net.svg'
 import captain from '../assets/svg/captain.svg'
 
-const PlayerCard = ({ player = players.data[0] }) => {
+const PlayerCard = ({ player = players.data[0], match = {} }) => {
   const localKeyPrefix = `fav_player_`
   const [isPlayerLiked, setIsPlayerLiked] = useState(localStorage.getItem(`${localKeyPrefix}${player.id}`) == "true")
   const performance = (player?.["Goals per match"] * 100).toFixed(0);
@@ -22,7 +22,7 @@ const PlayerCard = ({ player = players.data[0] }) => {
       </div>
       <div className="flex gap-2">
         <img src={globe} className="w-5" />
-        <span>{player.Country}</span>
+        <span>{match.country}</span>
       </div>
       <div className="flex gap-2">
         <div className="flex gap-2">
